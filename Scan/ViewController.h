@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Scan_VC.h"
+#import "QRCodeGenerator.h"
 @interface ViewController : UIViewController
 
 

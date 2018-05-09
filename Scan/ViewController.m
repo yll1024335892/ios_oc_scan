@@ -17,8 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+   [[[NSBundle mainBundle] loadNibNamed:@"ViewController" owner:self options:nil] firstObject];
 }
 
+- (IBAction)scanClickEvent:(id)sender {
+    Scan_VC*vc=[[Scan_VC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
